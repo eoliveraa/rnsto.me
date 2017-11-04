@@ -12,13 +12,19 @@
 .btn {
     &.btn-ghost {
         width: 160px;
-        border: 1px solid white;
         border-radius: 4px;
-        color: white;
         padding: 10px;
         text-align: center;
-        margin-left: calc(~'50% - 50px');
         margin-top: 32px;
+        &.white {
+            color: white;
+            border: 1px solid white;
+            margin-left: calc(~'50% - 50px');
+        }
+        &.blue {
+            color: @colorPrimary;
+             border: 1px solid @colorPrimary;
+        }
         &:hover {
             border: 1px solid @colorSecondary;
             color: @colorSecondary;

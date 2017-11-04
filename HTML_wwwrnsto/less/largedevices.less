@@ -202,10 +202,10 @@ footer {
         bottom: 0;
         position: absolute;
         content: "";
-        width: 2px;
-        background-color: #f1f1f1;
+        width: 3px;
+        background-color: #c0c0c0;
         left: 40px;
-        margin-left: -1.5px;
+        margin-left: 5.5px;
     }
     > li {
         margin-bottom: 50px;
@@ -249,7 +249,7 @@ footer {
             overflow: hidden;
             color: white;
             border-radius: 100%;
-            border: 7px solid #f1f1f1;
+            border: 7px solid #c0c0c0;
             text-align: center;
             .img-circle {
                 padding: 30px;
@@ -299,8 +299,21 @@ footer {
         }
     }
 }
+.my-work {
+    .my-work--item {
+        padding: 60px 20px 0px;
+    }
+    h4 {
+        margin: 20px auto 40px;
+    }
+}
 
+footer {
+    background-color: #e4e4e4;
+    margin: 60px 0 0;
+}
 @media(min-width:768px) {
+
     .timeline {
         &:before {
             left: 50%;
@@ -335,6 +348,9 @@ footer {
 }
 
 @media(min-width:992px) {
+    .mobile-only {
+        display: none;
+    }
     .timeline {
         > li {
             min-height: 150px;

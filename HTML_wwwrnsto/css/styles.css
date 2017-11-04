@@ -1107,13 +1107,19 @@ hr {
 }
 .btn.btn-ghost {
   width: 160px;
-  border: 1px solid white;
   border-radius: 4px;
-  color: white;
   padding: 10px;
   text-align: center;
-  margin-left: calc(50% - 50px);
   margin-top: 32px;
+}
+.btn.btn-ghost.white {
+  color: white;
+  border: 1px solid white;
+  margin-left: calc(50% - 50px);
+}
+.btn.btn-ghost.blue {
+  color: #02347c;
+  border: 1px solid #02347c;
 }
 .btn.btn-ghost:hover {
   border: 1px solid #21d3c4;
@@ -1319,10 +1325,10 @@ footer .social-links li a:hover {
   bottom: 0;
   position: absolute;
   content: "";
-  width: 2px;
-  background-color: #f1f1f1;
+  width: 3px;
+  background-color: #c0c0c0;
   left: 40px;
-  margin-left: -1.5px;
+  margin-left: 5.5px;
 }
 .timeline > li {
   margin-bottom: 50px;
@@ -1367,7 +1373,7 @@ footer .social-links li a:hover {
   overflow: hidden;
   color: white;
   border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  border: 7px solid #c0c0c0;
   text-align: center;
 }
 .timeline > li .timeline-image .img-circle {
@@ -1411,6 +1417,16 @@ footer .social-links li a:hover {
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
+.my-work .my-work--item {
+  padding: 60px 20px 0px;
+}
+.my-work h4 {
+  margin: 20px auto 40px;
+}
+footer {
+  background-color: #e4e4e4;
+  margin: 60px 0 0;
+}
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
@@ -1443,6 +1459,9 @@ footer .social-links li a:hover {
   }
 }
 @media (min-width: 992px) {
+  .mobile-only {
+    display: none;
+  }
   .timeline > li {
     min-height: 150px;
   }
