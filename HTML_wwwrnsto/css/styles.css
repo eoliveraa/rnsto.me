@@ -1427,6 +1427,9 @@ footer {
   background-color: #e4e4e4;
   margin: 60px 0 0;
 }
+.hidden-div {
+  display: none;
+}
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
@@ -1461,6 +1464,9 @@ footer {
 @media (min-width: 992px) {
   .mobile-only {
     display: none;
+  }
+  .desktop-only {
+    display: block;
   }
   .timeline > li {
     min-height: 150px;
@@ -1504,6 +1510,76 @@ footer {
 /* ------------------------------------------------------------
     MEDIUM DEVICES
 ------------------------------------------------------------ */
+@media (max-width: 991px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-navigation {
+    background-color: rgba(2, 52, 124, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(2, 52, 124, 0.9);
+    padding: 100px 60px;
+    color: white;
+  }
+  .mobile-menu a {
+    color: white;
+  }
+  .mobile-menu .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
+  .mobile-menu .sm-nav {
+    display: none;
+    list-style: none;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .mobile-menu .sm-nav li {
+    margin: 26px 0;
+  }
+  .mobile-menu .under-construction i {
+    font-size: 40px;
+    margin: 20px auto;
+  }
+  .mobile-menu .under-construction h3 {
+    color: white;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+    margin: 10px 0;
+  }
+  .hero-logo {
+    width: 260px;
+  }
+  .hero-logo .name {
+    font-size: 80px;
+  }
+  .hero-logo .designer {
+    font-size: 20px;
+    line-height: 26px;
+    top: 90px;
+    left: 110px;
+    width: 140px;
+  }
+}
 /* ------------------------------------------------------------
     SMALL DEVICES
 ------------------------------------------------------------ */

@@ -32,11 +32,11 @@
     </head>
 
     <body>
-        <div class="mobile-disclaimer mobile-only">
+        <div class="mobile-disclaimer hidden-div" >
             <h2>La versión móvil de este sitio está en construcción, visita este sitio en tu computadora para una mejor experiencia.</h2>
         </div>
         <header>
-            <nav class="navigation">
+            <nav class="navigation desktop-only">
                 <div class="container">
                     <div class="ref-logo">
                         RNSTO
@@ -47,6 +47,30 @@
                         <li><a href="#">Portafolio</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
+                </div>
+                
+            </nav>
+            <nav class="mobile-navigation mobile-only">
+                <div class="ref-logo">
+                    RNSTO
+                </div>
+                <div class="burger js-menu-trigger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="mobile-menu">
+                    <div class="close-menu js-close-menu">
+                        <i class="fa fa-angle-double-up"></i>
+                    </div>
+                    <ul class="sm-nav">
+                        <li><a href="#">¿Quién soy?</a></li>
+                        <li><a href="#trayectoria">Trayectoria</a></li>
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                    <div class="under-construction">
+                        <i class="fa fa-bug"></i>
+                        <h3>Estoy construyendo la versión móvil, por favor visita mi sitio desde una computadora. Muchas gracias.</h3>
+                    </div>
                 </div>
                 
             </nav>
